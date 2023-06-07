@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+header {
+    margin-top: 10px;
+    margin-left: 35px;
+    display: flex;
+    background-color: black;
+}
+body {
+    background-color: black;
+}
+
+.corner {
+    display: flex;
+}
+.corner h1 {
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Quicksand';
+    margin-left:50px;
+    margin-top: 6px;
+    letter-spacing: 2px;
+}
+.corner a img {
+    width: 40px;
+}
+.navbar {
+    margin-top: 6px;
+    display: flex;
+    overflow: hidden;
+    font-family: 'Quicksand';
+    margin-left: 80px;
+}
+.navbar a {
+    float: left;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+.dropdown {
+    margin-left: 25px;
+    float: left;
+}
+.navbar .button {
+    font-size: 20px ;
+    margin-left: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+.navbar .button:hover{
+    background-color: #6DAE52;
+    border-radius: 10px;
+    color: #fff;
+
+}
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: inherit;
+    margin: 0;
+    background-color: black;
+    color: #fff;
+}
+.dropdown:hover .dropbtn {
+    background-color: #6DAE52;
+    border-radius: 10px;
+}
+
+.navbar a:hover {
+    color: #6DAE52;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.bar {
+    display: flex;
+    height: 3px;
+    width: 98%;
+    background-color: #0c0c0c;
+    margin: 0 auto;
+    margin-top: 10px;
+}
