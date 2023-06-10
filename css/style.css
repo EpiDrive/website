@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +27,7 @@ body {
     margin-left:50px;
     margin-top: 6px;
     letter-spacing: 2px;
+    text-shadow:0px 0px 30px #0cad08;
 }
 .corner a img {
     width: 40px;
@@ -111,11 +113,93 @@ body {
     margin: 0 auto;
     margin-top: 10px;
 }
-#map {
-    margin-top: 50px;
-    margin-left: 1200px;
-    width: 600px;
-    height: 600px;
-    background: #d6d6d6;
-    border-radius: 40px;
+.mapBox {
+    margin-top: 40px;
+    margin-right: 40px;
 }
+.mapBox h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Quicksand';
+    color: #FFFFFF;
+}
+#map {
+    height: 200px;
+    border-radius: 15px;
+    margin:0 auto;
+}
+.content {
+    display: flex;
+    margin-left: 60px;
+}
+.leftText {
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 200px;
+    font-family: 'Quicksand';
+    font-size: 22px;
+}
+.leftText h1 {
+    color: #fff;
+    padding-bottom: 20px;
+}
+.leftText h3 {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.leftText p {
+    color: #fff;
+}
+.leftText span p {
+    color: #6DAE52;
+}
+.leftText .open {
+    font-family: 'Tilt Prism', cursive;
+    font-size: 70px;
+    padding-top: 100px ;
+    color: #6DAE52;
+    animation: letter-flicker 3s linear infinite;
+}
+@keyframes letter-flicker {
+    0% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px #6DAE52;
+    }
+    2% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px #73eb40;
+    }
+    4% {
+      opacity:1;
+      text-shadow: 0px 0px 29px #6DAE52;
+    }
+    
+    
+    19% {
+      opacity:1;
+      text-shadow: 0px 0px 29px #6DAE52;
+    }
+    21% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px #6DAE52;
+    }
+    23% {
+      opacity:1;
+      text-shadow: 0px 0px 29px #6DAE52;
+    }
+    
+    80% {
+      opacity:1;
+      text-shadow: 0px 0px 29px #6DAE52;
+    }
+    83% {
+      opacity:0.4;
+      text-shadow: 0px 0px 29px #6DAE52;
+    }
+    87% {
+      opacity:1;
+      text-shadow: 0px 0px 29px #6DAE52;
+    }
+  }

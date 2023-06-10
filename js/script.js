@@ -1,216 +1,25 @@
-function initMap() {
-    const selector = document.getElementById("map")
-    const center = { lat: 47.0494422, lng: -0.9021579 }
-    const options = {
-        center: center,
-        zoom : 8,
-        styles: [
-            {
-              "elementType": "geometry",
-              "stylers": [
-                {
-                  "color": "#242f3e"
-                }
-              ]
-            },
-            {
-              "elementType": "labels.text.fill",
-              "stylers": [
-                {
-                  "color": "#746855"
-                }
-              ]
-            },
-            {
-              "elementType": "labels.text.stroke",
-              "stylers": [
-                {
-                  "color": "#242f3e"
-                }
-              ]
-            },
-            {
-              "featureType": "administrative.locality",
-              "elementType": "labels.text.fill",
-              "stylers": [
-                {
-                  "color": "#d59563"
-                }
-              ]
-            },
-            {
-              "featureType": "poi",
-              "elementType": "labels.text.fill",
-              "stylers": [
-                {
-                  "color": "#d59563"
-                }
-              ]
-            },
-            {
-              "featureType": "poi.business",
-              "stylers": [
-                {
-                  "visibility": "off"
-                }
-              ]
-            },
-            {
-              "featureType": "poi.park",
-              "elementType": "geometry",
-              "stylers": [
-                {
-                  "color": "#263c3f"
-                }
-              ]
-            },
-            {
-              "featureType": "poi.park",
-              "elementType": "labels.text",
-              "stylers": [
-                {
-                  "visibility": "off"
-                }
-              ]
-            },
-            {
-              "featureType": "poi.park",
-              "elementType": "labels.text.fill",
-              "stylers": [
-                {
-                  "color": "#6b9a76"
-                }
-              ]
-            },
-            {
-              "featureType": "road",
-              "elementType": "geometry",
-              "stylers": [
-                {
-                  "color": "#38414e"
-                }
-              ]
-            },
-            {
-              "featureType": "road",
-              "elementType": "geometry.stroke",
-              "stylers": [
-                {
-                  "color": "#212a37"
-                }
-              ]
-            },
-            {
-              "featureType": "road",
-              "elementType": "labels.text.fill",
-              "stylers": [
-                {
-                  "color": "#9ca5b3"
-                }
-              ]
-            },
-            {
-              "featureType": "road.arterial",
-              "stylers": [
-                {
-                  "visibility": "off"
-                }
-              ]
-            },
-            {
-              "featureType": "road.highway",
-              "elementType": "geometry",
-              "stylers": [
-                {
-                  "color": "#746855"
-                }
-              ]
-            },
-            {
-              "featureType": "road.highway",
-              "elementType": "geometry.stroke",
-              "stylers": [
-                {
-                  "color": "#1f2835"
-                }
-              ]
-            },
-            {
-              "featureType": "road.highway",
-              "elementType": "labels",
-              "stylers": [
-                {
-                  "visibility": "off"
-                }
-              ]
-            },
-            {
-              "featureType": "road.highway",
-              "elementType": "labels.text.fill",
-              "stylers": [
-                {
-                  "color": "#f3d19c"
-                }
-              ]
-            },
-            {
-              "featureType": "road.local",
-              "stylers": [
-                {
-                  "visibility": "off"
-                }
-              ]
-            },
-            {
-              "featureType": "transit",
-              "elementType": "geometry",
-              "stylers": [
-                {
-                  "color": "#2f3948"
-                }
-              ]
-            },
-            {
-              "featureType": "transit.station",
-              "elementType": "labels.text.fill",
-              "stylers": [
-                {
-                  "color": "#d59563"
-                }
-              ]
-            },
-            {
-              "featureType": "water",
-              "elementType": "geometry",
-              "stylers": [
-                {
-                  "color": "#17263c"
-                }
-              ]
-            },
-            {
-              "featureType": "water",
-              "elementType": "labels.text.fill",
-              "stylers": [
-                {
-                  "color": "#515c6d"
-                }
-              ]
-            },
-            {
-              "featureType": "water",
-              "elementType": "labels.text.stroke",
-              "stylers": [
-                {
-                  "color": "#17263c"
-                }
-              ]
-            }
-          ]
-    }
-    const map = new google.maps.Map(selector, options);
-    const marker = new google.maps.Marker({
-        position: center,
-        map: map,
-    });
-}
+const map = L.map('map').setView([45.4808, -0.7790], 10);
+
+const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 19,
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+const polygon = L.polygon([
+  [45.6214591447955, -1.0439702793842578],
+  [45.673667442820445, -0.9335979727423607],
+  [45.68134645929183, -0.757095377366654],
+  [45.57900188353143, -0.5543697477815047],
+  [45.44751529152376, -0.44182321932589147],
+  [45.37007799965582, -0.5664003644032041],
+  [45.28875282825224, -0.6117288538511838],
+  [45.283579144641564, -0.7017012364070209],
+  [45.45403061876929, -0.7907668895536976],
+  [45.61938203236569, -1.0390869938318206]
+], {color: '#21fc33', weight: 5, smoothFactor: 1,lineCap: "square"}).addTo(map).bindPopup('Point de vente');
+const polyline = L.polyline([
+  [45.58461258214044, -0.9889405716819907],
+  [45.60644263634051, -0.9546836045455908],
+  [45.62248872905588, -0.9513190809875516],
+  [45.66632462382909, -0.9516249467655552]
+
+], {color: '#21eafc', weight: 6}).addTo(map).bindPopup('Vente hors zones : 50€');
