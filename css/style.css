@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cantata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -155,51 +155,100 @@ body {
 .leftText span p {
     color: #6DAE52;
 }
-.leftText .open {
-    font-family: 'Cantata One', serif;
+#open h1 {
+    font-family: 'Tilt Prism', cursive;
     font-size: 70px;
     padding-top: 100px ;
     color: #6DAE52;
-    animation: letter-flicker 3s linear infinite;
+    animation: letter-flicker-green 3s linear infinite;
 }
-@keyframes letter-flicker {
+#close h1 {
+    font-family: 'Tilt Prism', cursive;
+    font-size: 70px;
+    padding-top: 100px ;
+    color: #920303;
+    animation: letter-flicker-red 3s linear infinite;
+
+}
+@keyframes letter-flicker-green {
     0% {
       opacity:0.1;
-      text-shadow: 0px 0px 29px #6DAE52;
+      text-shadow: 0px 0px 29px #8afa5e;
     }
     2% {
       opacity:0.1;
-      text-shadow: 0px 0px 29px #73eb40;
+      text-shadow: 0px 0px 29px #c2faab;
     }
     4% {
       opacity:1;
-      text-shadow: 0px 0px 29px #6DAE52;
+      text-shadow: 0px 0px 29px #a5ff81;
     }
     
     
     19% {
       opacity:1;
-      text-shadow: 0px 0px 29px #6DAE52;
+      text-shadow: 0px 0px 29px #48ff00;
     }
     21% {
       opacity:0.1;
-      text-shadow: 0px 0px 29px #6DAE52;
+      text-shadow: 0px 0px 29px #c2faab;
     }
     23% {
       opacity:1;
-      text-shadow: 0px 0px 29px #6DAE52;
+      text-shadow: 0px 0px 29px #c2faab;
     }
     
     80% {
       opacity:1;
-      text-shadow: 0px 0px 29px #6DAE52;
+      text-shadow: 0px 0px 29px #7aff45;
     }
     83% {
       opacity:0.4;
-      text-shadow: 0px 0px 29px #6DAE52;
+      text-shadow: 0px 0px 29px #c2faab;
     }
     87% {
       opacity:1;
-      text-shadow: 0px 0px 29px #6DAE52;
+      text-shadow: 0px 0px 29px #7fff4c;
+    }
+  }
+  @keyframes letter-flicker-red {
+    0% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px #920303;
+    }
+    2% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px #920303;
+    }
+    4% {
+      opacity:1;
+      text-shadow: 0px 0px 29px #d40404;
+    }
+    
+    
+    19% {
+      opacity:1;
+      text-shadow: 0px 0px 29px #920303;
+    }
+    21% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px #be0303;
+    }
+    23% {
+      opacity:1;
+      text-shadow: 0px 0px 29px #cc0000;
+    }
+    
+    80% {
+      opacity:1;
+      text-shadow: 0px 0px 29px #920303;
+    }
+    83% {
+      opacity:0.4;
+      text-shadow: 0px 0px 29px #920303;
+    }
+    87% {
+      opacity:1;
+      text-shadow: 0px 0px 29px #920303;
     }
   }
