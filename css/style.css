@@ -170,6 +170,12 @@ body {
     animation: letter-flicker-red 3s linear infinite;
 
 }
+#open span p {
+    color: #6DAE52
+}
+#close span p {
+  color: #6DAE52
+}
 @keyframes letter-flicker-green {
     0% {
       opacity:0.1;
