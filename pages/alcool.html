@@ -15,14 +15,14 @@
     <title>EPIDRIVE</title>
 
     <!-- Favicon et styles -->
-    <link rel="icon" type="image/png" href="img/logo.png" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="../img/logo.png" />
+    <link rel="stylesheet" href="../css/style.css">
 
     <!-- Librairies externes -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://kit.fontawesome.com/78cd1e5435.js" crossorigin="anonymous"></script>
-    <script src="js/client.js"></script>
+    <script src="../js/client.js"></script>
 </head>
 
 <body>
@@ -30,18 +30,19 @@
         <div class="corner">
             <!-- Logo -->
             <a href="#">
-                <img src="img/logo.png" alt="">
+                <img src="../img/logo.png" alt="">
             </a>
             <h1>EPIDRIVE</h1>
         </div>
         <div class="navbar">
             <!-- Menus déroulants -->
+            <a href="../index.html" class="button">Accueil</a>
             <div class="dropdown">
                 <button class="dropbtn">Boisson
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="./pages/soft.html">Soft</a>
+                    <a href="">Soft</a>
                     <a href="">Alcool</a>
                 </div>
             </div>
@@ -50,33 +51,13 @@
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="./pages/sucré.html">Sucré</a>
-                    <a href="./pages/salé.html">Salé</a>
+                    <a href="">Sucré</a>
+                    <a href="">Salé</a>
                 </div>
             </div>
-            <a href="./pages/pack.html" class="button">Packs</a>
-            <a href="./pages/autres.html" class="button">Autres</a>
+            <a href="" class="button">Packs</a>
+            <a href="" class="button">Autres</a>
         </div>
     </header>
-    <div class="bar"></div>
-    <div class="content">
-        <div class="leftText">
-            <!-- Texte de gauche -->
-            <h1>Livraison de nuit</h1>
-            <h3>À l'écoute de vos besoins à des heures</h3>
-            <h3>inaccessibles en temps normal</h3>
-            <p>&nbsp;</p>
-            <p>Mortagne-sur-Gironde et 20km alentours</p>
-            <div id="open">
-                <!-- État d'ouverture -->
-                <h1>OPEN</h1>
-            </div>
-        </div>
-        <div class="mapBox">
-            <!-- Carte -->
-            <h1>Zone de livraison :</h1>
-            <img id="map" src="https://cdn.sheldon-dev.fr/epidrive/map.jpg" alt="Carte EpiDrive" style="width: 700px; height: 700px;"/>
-        </div>
     </div>
-    <script src="js/isopen.js"></script>
 </html>
