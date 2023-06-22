@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap%27');
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
 * {
     margin: 0;
@@ -25,11 +25,14 @@ body {
 .corner h1 {
     font-size: 30px;
     color: #fff;
-    font-family: 'Gasoek One';
+    font-family: 'Rubik';
     margin-left:50px;
     margin-top: 6px;
     letter-spacing: 2px;
     text-shadow:0px 0px 30px #0cad08;
+}
+.corner a {
+  text-decoration: none;
 }
 .corner a img {
     width: 40px;
@@ -38,7 +41,7 @@ body {
     margin-top: 6px;
     display: flex;
     overflow: hidden;
-    font-family: 'Gasoek One';
+    font-family: 'Rubik';
     margin-left: 80px;
 }
 .navbar a {
@@ -122,7 +125,7 @@ body {
 .mapBox h1 {
     text-align: center;
     margin-bottom: 30px;
-    font-family: 'Gasoek One';
+    font-family: 'Rubik';
     color: #FFFFFF;
 }
 #map {
@@ -139,7 +142,7 @@ body {
     padding-left: 300px;
     padding-right: 300px;
     padding-top: 200px;
-    font-family: 'Gasoek One';
+    font-family: 'Rubik';
     font-size: 22px;
 }
 .leftText h1 {
@@ -177,6 +180,15 @@ body {
 }
 #close span p {
   color: #6DAE52
+}
+#greenGlow {
+  color:#05c702;
+  text-shadow:
+  0 0 7px #24cc21,
+  0 0 10px #24cc21,
+  0 0 21px #24cc21,
+  0 0 42px #24cc21,
+  0 0 82px #24cc21
 }
 @keyframes letter-flicker-green {
     0% {
